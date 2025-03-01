@@ -3,6 +3,18 @@ Communicate with your group and put yourselves into the same group prior to turn
 Submission from all groups should be a single zip file of the entire development tree including any testing document produced.
 Design, code, and test an Employee Payroll app using the Student Database app as a template.
 
+All references to book material are referencing the following:
+	
+Visual C#: How to Program, 6th Edition
+
+Paul J. Deitel, Harvey Deitel
+Publisher: Pearson
+Copyright year: © 2016
+Web ISBN-13: 978-0-13-460154-0
+Print ISBN-13: 978-0-13-460179-3
+Available: VitalSource, Amazon, etc.
+
+
 Use a Console App - .NET Core
 Database storage must use a plain text (UTF-8) file - no database software allowed
 Use the Employee inheritance hierarchy data object classes from the Deitel book example - Fig12_04_09 PayrollSystem code.
