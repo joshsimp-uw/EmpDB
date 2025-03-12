@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpDB
 {
-  internal class EmployeeApp
+  internal class PaymentApp
   {
     private List<IPayable> payments = new List<IPayable>();
 
