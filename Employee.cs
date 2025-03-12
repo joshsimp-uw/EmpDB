@@ -1,6 +1,6 @@
 ﻿namespace EmpDB
 {
-  public abstract class Employee
+  public abstract class Employee : IPayable
   {
     public string FirstName { get; }
     public string LastName { get; }
@@ -22,8 +22,9 @@
     public abstract decimal Earnings();
 
 
-    
-    
+    // implementing GetPaymentAmount here enables the entire Employee
+    // class hierarchy to be used in an app that processes IPayables
+    public decimal GetPaymentAmount() => Earnings();
   }
 
 
