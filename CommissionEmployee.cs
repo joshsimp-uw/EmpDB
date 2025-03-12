@@ -10,15 +10,18 @@ namespace EmpDB
   {
     private decimal grossSales; // gross weekly sales
     private decimal commissionRate; // commission percentage
+    public override string PaymentType;
 
-    // five-parameter constructor
-    public CommissionEmployee(string firstName, string lastName,
+
+        // five-parameter constructor
+        public CommissionEmployee(string firstName, string lastName,
     string socialSecurityNumber, decimal grossSales,
     decimal commissionRate) : base(firstName, lastName, socialSecurityNumber)
     {
       GrossSales = grossSales; // validate gross sales
       CommissionRate = commissionRate; // validate commission rate
-    }
+      PaymentType = this.GetType().Name; // initialize paymenttype for serialization
+        }
 
     public decimal GrossSales
     {

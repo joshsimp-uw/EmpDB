@@ -9,6 +9,7 @@ namespace EmpDB
   internal class BasePlusCommissionEmployee : CommissionEmployee
   {
     private decimal baseSalary; // base salary per week
+    public override string PaymentType;
     
     // six-parameter constructor
     public BasePlusCommissionEmployee(string firstName, string lastName,
@@ -17,6 +18,7 @@ namespace EmpDB
       : base(firstName, lastName, socialSecurityNumber, grossSales, commissionRate)
     {
       BaseSalary = baseSalary; // validate base salary
+      PaymentType = this.GetType().Name; // initialize paymenttype for serialization
     }
 
     // property that gets and sets base-salaried commission employee's base salary

@@ -3,13 +3,16 @@
   internal class SalariedEmployee : Employee
   {
     private decimal weeklySalary;
+    public override string PaymentType;
 
-    // four-parameter constructor
-    public SalariedEmployee(string firstName, string lastName,
+
+        // four-parameter constructor
+        public SalariedEmployee(string firstName, string lastName,
     string socialSecurityNumber, decimal weeklySalary)
       : base(firstName, lastName, socialSecurityNumber)
     {
       WeeklySalary = weeklySalary; // validate salary
+      PaymentType = this.GetType().Name; // initialize paymenttype for serialization
     }
 
     // property that gets and sets salaried employee's salary

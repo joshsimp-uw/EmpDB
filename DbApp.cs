@@ -717,7 +717,7 @@ namespace EmpDB
       File.WriteAllText(Constants.StudentOuputJSONFile, json);
     }
 
-    public void PaymentDbTester()
+    public void StudentDbTester()
     {
       Student stu1 = new Student();
       Student stu2 = new Student();

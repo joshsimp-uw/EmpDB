@@ -4,14 +4,19 @@
   {
     private decimal wage; // wage per hour
     private decimal hours; // hours worked for the week
-                           // five-parameter constructor
-    public HourlyEmployee(string firstName, string lastName,
+    public override string PaymentType;
+
+        // five-parameter constructor
+        public HourlyEmployee(string firstName, string lastName,
     string socialSecurityNumber, decimal hourlyWage,
     decimal hoursWorked) : base(firstName, lastName, socialSecurityNumber)
     {
       Wage = hourlyWage; // validate hourly wage
       Hours = hoursWorked; // validate hours worked
+      PaymentType = this.GetType().Name; // initialize paymenttype for serialization
+
     }
+   
     public decimal Wage
     {
       get

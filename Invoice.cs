@@ -6,7 +6,7 @@
     public string PartDescription { get; }
     private int quantity;
     private decimal pricePerItem;
-
+    
     // four-parameter constructor
     public Invoice(string partNumber, string partDescription, int quantity,
     decimal pricePerItem)
@@ -16,6 +16,9 @@
       Quantity = quantity; // validate quantity
       PricePerItem = pricePerItem; // validate price per item
     }
+
+    //method to return PaymentType
+    public virtual string GetPaymentType() => this.GetType().Name;
 
     // property that gets and sets the quantity on the invoice
     public int Quantity
