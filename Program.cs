@@ -1,12 +1,19 @@
 ﻿namespace EmpDB
 {
-  internal class Program
+  class Program
   {
     static void Main(string[] args)
     {
       PaymentApp paymentApp = new PaymentApp();
-      paymentApp.Run();
-      paymentApp.PaymentDBTester();
+
+     // Load sample data
+     //paymentApp.PaymentDBTester();
+     // OR
+     // Load Data
+     paymentApp.ReadPayableDataFromInputFile();
+     // Start the application
+     paymentApp.Run();
+      
     }
   }
 }

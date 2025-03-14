@@ -9,7 +9,7 @@ namespace EmpDB
   internal class BasePlusCommissionEmployee : CommissionEmployee
   {
     private decimal baseSalary; // base salary per week
-    public override string PaymentType;
+    public string PaymentType;
     
     // six-parameter constructor
     public BasePlusCommissionEmployee(string firstName, string lastName,

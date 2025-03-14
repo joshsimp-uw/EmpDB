@@ -10,7 +10,7 @@ namespace EmpDB
   {
     private decimal grossSales; // gross weekly sales
     private decimal commissionRate; // commission percentage
-    public override string PaymentType;
+    public string PaymentType;
 
 
         // five-parameter constructor

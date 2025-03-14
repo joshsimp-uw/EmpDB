@@ -3,12 +3,12 @@
   internal class SalariedEmployee : Employee
   {
     private decimal weeklySalary;
-    public override string PaymentType;
+    public string PaymentType;
 
 
         // four-parameter constructor
         public SalariedEmployee(string firstName, string lastName,
-    string socialSecurityNumber, decimal weeklySalary)
+        string socialSecurityNumber, decimal weeklySalary)
       : base(firstName, lastName, socialSecurityNumber)
     {
       WeeklySalary = weeklySalary; // validate salary

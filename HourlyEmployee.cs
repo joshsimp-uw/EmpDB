@@ -4,12 +4,12 @@
   {
     private decimal wage; // wage per hour
     private decimal hours; // hours worked for the week
-    public override string PaymentType;
+    public string PaymentType;
 
         // five-parameter constructor
         public HourlyEmployee(string firstName, string lastName,
-    string socialSecurityNumber, decimal hourlyWage,
-    decimal hoursWorked) : base(firstName, lastName, socialSecurityNumber)
+        string socialSecurityNumber, decimal hourlyWage,
+        decimal hoursWorked) : base(firstName, lastName, socialSecurityNumber)
     {
       Wage = hourlyWage; // validate hourly wage
       Hours = hoursWorked; // validate hours worked
