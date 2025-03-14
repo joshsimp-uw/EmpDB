@@ -4,16 +4,15 @@
   {
     private decimal wage; // wage per hour
     private decimal hours; // hours worked for the week
-    public string PaymentType;
+    public override string PaymentType { get => this.GetType().Name; } // override PaymentType to return the type of employee
 
-        // five-parameter constructor
-        public HourlyEmployee(string firstName, string lastName,
+    // five-parameter constructor
+    public HourlyEmployee(string firstName, string lastName,
         string socialSecurityNumber, decimal hourlyWage,
         decimal hoursWorked) : base(firstName, lastName, socialSecurityNumber)
     {
       Wage = hourlyWage; // validate hourly wage
       Hours = hoursWorked; // validate hours worked
-      PaymentType = this.GetType().Name; // initialize paymenttype for serialization
 
     }
    

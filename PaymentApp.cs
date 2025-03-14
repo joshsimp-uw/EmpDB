@@ -160,7 +160,6 @@ namespace EmpDB
             }
         }
 
-
         private void AddInvoice()
         {
             // Part Number
@@ -302,7 +301,6 @@ namespace EmpDB
             if (Decimal.TryParse(Console.ReadLine(), out decimal newPrice) && newPrice >= 0)
                 inv.PricePerItem = newPrice;
         }
-
 
         private void DeletePayableRecord()
         {

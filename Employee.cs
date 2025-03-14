@@ -5,12 +5,7 @@
     public string FirstName { get; }
     public string LastName { get; }
     public string SocialSecurityNumber { get; }
-    public virtual string PaymentType { get; }
-
-    public Employee() {
-      PaymentType = this.GetType().Name;
-    }
-    
+    public virtual string PaymentType { get => this.GetType().Name; }
 
     public virtual string GetPaymentType(){ return PaymentType; }
 
@@ -19,7 +14,6 @@
       FirstName = firstName;
       LastName = lastName;
       SocialSecurityNumber = socialSecurityNumber;
-      PaymentType = this.GetType().Name;
     }
 
     // return string representation of Employee object, using properties
